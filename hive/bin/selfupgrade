@@ -3,7 +3,7 @@
 [ -e "/usr/bin/compile_time" ] && ASIC_MODEL=`sed -n 2p /usr/bin/compile_time`
 [ -e "/opt/system/bank.conf" ] && ASIC_MODEL="ebit"
 [ -e "/etc/hwrevision" ] && ASIC_MODEL=`cut -d\  -f 2 /etc/hwrevision`
-release=`curl -f --silent -L --insecure https://raw.githubusercontent.com/minershive/hiveos-asic/master/hive/etc/VERSION`
+release=`curl -f --silent -L --insecure https://raw.githubusercontent.com/Finn-Sionnach/hiveos-asic/master/hive/etc/VERSION`
 exitcode=$?
 version=0
 [ -e /hive/etc/VERSION ] && version=`cat /hive/etc/VERSION`
@@ -40,7 +40,7 @@ if [ $# != "0" ]; then
 		filename=v$release.tar.gz
 	fi
 fi
-url=http://github.com/minershive/hiveos-asic/archive/$filename
+url=http://github.com/Finn-Sionnach/hiveos-asic/archive/$filename
 
 [ -e $filename ] && rm $filename
 
