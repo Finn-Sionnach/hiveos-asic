@@ -16,6 +16,8 @@ Supported ASICs:
 * Innosilicon D9 DecredMaster
 * Innosilicon S11 SiaMaster
 
+*experimental L3+ (Blissz)
+
 
 
 ## Installation
@@ -29,7 +31,7 @@ Innosilicon - default user:**root**  default password:**blacksheepwall** or **in
 
 Login with SSH to your miner and run the following command
 ``` sh
-cd /tmp && curl -L --insecure -s -O https://raw.githubusercontent.com/minershive/hiveos-asic/master/hive/bin/selfupgrade && sh selfupgrade
+cd /tmp && curl -L --insecure -s -O https://raw.githubusercontent.com/Finn-Sionnach/hiveos-asic/master/hive/bin/selfupgrade && sh selfupgrade
 ```
 For Antminer D3 **Blissz**, before installation run:
 ```
